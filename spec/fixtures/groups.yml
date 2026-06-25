@@ -1,13 +1,233 @@
+---
 root:
   parent:
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
   lft: 1
-  rgt: 2
-  name: Hauptgruppe
-  type: Group::Root
-  email: root@example.net
-  zip_code: 2843
-  town: Neu Carlscheid
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:root) %>
-
-# TODO add more groups
-# you could generate a good setup manually and dump it with rake fixtures:groups
+  rgt: 60
+  name: Dachverband
+  type: Group::Dachverband
+  email: info@oeku.ch
+  street: Sulgenauweg
+  housenumber: '26'
+  zip_code: 3007
+  town: Bern
+mitarbeitende:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 38
+  rgt: 39
+  name: Mitarbeitende
+  short_name: Mitarbeitende
+  type: Group::DachverbandMitarbeitende
+vorstand:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 58
+  rgt: 59
+  name: Vorstand
+  short_name: Vorstand
+  type: Group::DachverbandVorstand
+mitglieder:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 40
+  rgt: 41
+  name: Mitglieder
+  short_name: Mitglieder
+  type: Group::DachverbandMitglieder
+kontakte:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 36
+  rgt: 37
+  name: Kontakte
+  type: Group::DachverbandKontakte
+eks:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:eks)%>"
+  lft: 2
+  rgt: 35
+  name: Evangelische Kirche Schweiz (EKS)
+  type: Group::NationaleOrganisation
+mitarbeitende_eks:
+  parent: eks
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:eks)%>"
+  lft: 17
+  rgt: 18
+  name: Mitarbeitende
+  short_name: Mitarbeitende
+  type: Group::NationaleOrganisationMitarbeitende
+synodalrat_eks:
+  parent: eks
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:eks)%>"
+  lft: 19
+  rgt: 20
+  name: Synodalrat
+  short_name: Synodalrat
+  type: Group::NationaleOrganisationSynodalrat
+sbk:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:sbk)%>"
+  lft: 44
+  rgt: 57
+  name: Schweizer Bischofskonferenz (SBK)
+  type: Group::NationaleOrganisation
+mitarbeitende_sbk:
+  parent: sbk
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:sbk)%>"
+  lft: 53
+  rgt: 54
+  name: Mitarbeitende
+  short_name: Mitarbeitende
+  type: Group::NationaleOrganisationMitarbeitende
+synodalrat_sbk:
+  parent: sbk
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:sbk)%>"
+  lft: 55
+  rgt: 56
+  name: Synodalrat
+  short_name: Synodalrat
+  type: Group::NationaleOrganisationSynodalrat
+zh:
+  parent: eks
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:zh)%>"
+  lft: 21
+  rgt: 34
+  name: Zürich
+  type: Group::KantonaleOrganisation
+mitarbeitende_zh:
+  parent: zh
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:zh)%>"
+  lft: 30
+  rgt: 31
+  name: Mitarbeitende
+  short_name: Mitarbeitende
+  type: Group::KantonaleOrganisationMitarbeitende
+synodalrat_zh:
+  parent: zh
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:zh)%>"
+  lft: 32
+  rgt: 33
+  name: Synodalrat
+  short_name: Synodalrat
+  type: Group::KantonaleOrganisationSynodalrat
+be:
+  parent: eks
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:be)%>"
+  lft: 3
+  rgt: 16
+  name: Bern
+  type: Group::KantonaleOrganisation
+mitarbeitende_be:
+  parent: bern
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:be)%>"
+  lft: 12
+  rgt: 13
+  name: Mitarbeitende
+  short_name: Mitarbeitende
+  type: Group::KantonaleOrganisationMitarbeitende
+synodalrat_be:
+  parent: bern
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:be)%>"
+  lft: 14
+  rgt: 15
+  name: Synodalrat
+  short_name: Synodalrat
+  type: Group::KantonaleOrganisationSynodalrat
+kg_altstetten:
+  parent: zuerich
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:kg_altstetten)%>"
+  lft: 22
+  rgt: 25
+  name: Kirchgemeinde Altstetten
+  type: Group::Kirchgemeinde
+mitarbeitende_altstetten:
+  parent: kg_altstetten
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:kg_altstetten)%>"
+  lft: 23
+  rgt: 24
+  name: Mitarbeitende
+  short_name: Mitarbeitende
+  type: Group::KirchgemeindeMitarbeitende
+kg_oerlikon:
+  parent: zuerich
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:kg_oerlikon)%>"
+  lft: 26
+  rgt: 29
+  name: Kirchgemeinde Oerlikon
+  type: Group::Kirchgemeinde
+mitarbeitende_oerlikon:
+  parent: kg_oerlikon
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:kg_oerlikon)%>"
+  lft: 27
+  rgt: 28
+  name: Mitarbeitende
+  short_name: Mitarbeitende
+  type: Group::KirchgemeindeMitarbeitende
+kg_bern:
+  parent: bern
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:kg_bern)%>"
+  lft: 4
+  rgt: 7
+  name: Kirchgemeinde Bern
+  type: Group::Kirchgemeinde
+mitarbeitende_bern:
+  parent: kg_bern
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:kg_bern)%>"
+  lft: 5
+  rgt: 6
+  name: Mitarbeitende
+  short_name: Mitarbeitende
+  type: Group::KirchgemeindeMitarbeitende
+kg_thun:
+  parent: bern
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:kg_thun)%>"
+  lft: 8
+  rgt: 11
+  name: Kirchgemeinde Thun
+  type: Group::Kirchgemeinde
+mitarbeitende_thun:
+  parent: kg_thun
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:kg_thun)%>"
+  lft: 9
+  rgt: 10
+  name: Mitarbeitende
+  short_name: Mitarbeitende
+  type: Group::KirchgemeindeMitarbeitende
+bistum_basel:
+  parent: sbk
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:bistum_basel)%>"
+  lft: 45
+  rgt: 48
+  name: Bistum Basel
+  type: Group::Bistum
+mitarbeitende_basel:
+  parent: bistum_basel
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:bistum_basel)%>"
+  lft: 46
+  rgt: 47
+  name: Mitarbeitende
+  short_name: Mitarbeitende
+  type: Group::BistumMitarbeitende
+bistum_chur:
+  parent: sbk
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:bistum_chur)%>"
+  lft: 49
+  rgt: 52
+  name: Bistum Chur
+  type: Group::Bistum
+mitarbeitende_chur:
+  parent: bistum_chur
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:bistum_chur)%>"
+  lft: 50
+  rgt: 51
+  name: Mitarbeitende
+  short_name: Mitarbeitende
+  type: Group::BistumMitarbeitende
+partnernetzwerk:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:partnernetzwerk)%>"
+  lft: 42
+  rgt: 43
+  name: Partnernetzwerk
+  type: Group::Kontakte
