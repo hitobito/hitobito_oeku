@@ -10,11 +10,11 @@ class Group::DachverbandVorstand < ::Group
 
   ### ROLES
 
-  class Praesidentin < ::Role
+  class Praesident < ::Role
     self.permissions = [:group_full]
   end
 
-  class Vizepraesidentin < ::Role
+  class Vizepraesident < ::Role
     self.permissions = [:group_full]
   end
 
@@ -22,5 +22,5 @@ class Group::DachverbandVorstand < ::Group
     self.permissions = [:group_read]
   end
 
-  roles Praesidentin, Vizepraesidentin, Vorstandsmitglied
+  roles Praesident, Vizepraesident, Vorstandsmitglied
 end

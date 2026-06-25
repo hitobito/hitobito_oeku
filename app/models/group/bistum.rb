@@ -38,10 +38,10 @@ class Group::Bistum < ::Group
   class Bischof < ::Role
   end
 
-  class Theologin < ::Role
+  class Theologe < ::Role
   end
 
-  class Pfarrerin < ::Role
+  class Pfarrer < ::Role
   end
 
   class Medienverantwortliche < ::Role
@@ -55,7 +55,7 @@ class Group::Bistum < ::Group
     Energieteamleitende,
     Nachhaltigkeitsverantwortliche,
     Bischof,
-    Theologin,
-    Pfarrerin,
+    Theologe,
+    Pfarrer,
     Medienverantwortliche
 end

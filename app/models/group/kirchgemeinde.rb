@@ -37,13 +37,13 @@ class Group::Kirchgemeinde < ::Group
   class Nachhaltigkeitsverantwortliche < ::Role
   end
 
-  class Theologin < ::Role
+  class Theologe < ::Role
   end
 
-  class Pfarrerin < ::Role
+  class Pfarrer < ::Role
   end
 
-  class Diakonin < ::Role
+  class Diakon < ::Role
   end
 
   class Pfarreileitende < ::Role
@@ -59,9 +59,9 @@ class Group::Kirchgemeinde < ::Group
     Sicherheitsbeauftragte,
     Energieteamleitende,
     Nachhaltigkeitsverantwortliche,
-    Theologin,
-    Pfarrerin,
-    Diakonin,
+    Theologe,
+    Pfarrer,
+    Diakon,
     Pfarreileitende,
     Medienverantwortliche
 end

@@ -18,9 +18,9 @@ class Group::BistumMitarbeitende < ::Group
     self.permissions = [:layer_full]
   end
 
-  class Generalsekretaerin < ::Role
+  class Generalsekretaer < ::Role
     self.permissions = [:layer_full]
   end
 
-  roles Mitarbeitender, Administration, Generalsekretaerin
+  roles Mitarbeitender, Administration, Generalsekretaer
 end

@@ -16,8 +16,8 @@ class Group::DachverbandMitglieder < ::Group
   class Kollektivmitglied < ::Role
   end
 
-  class Erstspenderin < ::Role
+  class Erstspender < ::Role
   end
 
-  roles Einzelmitglied, Kollektivmitglied, Erstspenderin
+  roles Einzelmitglied, Kollektivmitglied, Erstspender
 end

@@ -10,7 +10,7 @@ class Group::KirchgemeindeKirchgemeinderat < ::Group
 
   ### ROLES
 
-  class Kirchgemeinderatspraesidentin < ::Role
+  class Kirchgemeinderatspraesident < ::Role
     self.permissions = [:group_full]
   end
 
@@ -18,5 +18,5 @@ class Group::KirchgemeindeKirchgemeinderat < ::Group
     self.permissions = [:group_read]
   end
 
-  roles Kirchgemeinderatspraesidentin, Mitglied
+  roles Kirchgemeinderatspraesident, Mitglied
 end

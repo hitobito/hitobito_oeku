@@ -25,9 +25,9 @@ class Group::Dachverband < ::Group
 
   ### ROLES
 
-  class Administratorin < ::Role
+  class Administrator < ::Role
     self.permissions = [:admin, :layer_and_below_full, :impersonation]
   end
 
-  roles Administratorin
+  roles Administrator
 end

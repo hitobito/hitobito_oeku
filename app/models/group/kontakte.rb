@@ -27,8 +27,8 @@ class Group::Kontakte < ::Group
   class Leistungsvereinbarung < ::Role
   end
 
-  class Journalistin < ::Role
+  class Journalist < ::Role
   end
 
-  roles Vorstand, Kontakt, Mitarbeitender, Medienverantwortliche, Leistungsvereinbarung, Journalistin
+  roles Vorstand, Kontakt, Mitarbeitender, Medienverantwortliche, Leistungsvereinbarung, Journalist
 end

@@ -10,7 +10,7 @@ class Group::KantonaleOrganisationSynodalrat < ::Group
 
   ### ROLES
 
-  class Synodalratspraesidentin < ::Role
+  class Synodalratspraesident < ::Role
     self.permissions = [:group_full]
   end
 
@@ -18,5 +18,5 @@ class Group::KantonaleOrganisationSynodalrat < ::Group
     self.permissions = [:group_read]
   end
 
-  roles Synodalratspraesidentin, Synodale
+  roles Synodalratspraesident, Synodale
 end

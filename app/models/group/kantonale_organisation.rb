@@ -40,10 +40,10 @@ class Group::KantonaleOrganisation < ::Group
   class Nachhaltigkeitsverantwortliche < ::Role
   end
 
-  class Theologin < ::Role
+  class Theologe < ::Role
   end
 
-  class Pfarrerin < ::Role
+  class Pfarrer < ::Role
   end
 
   class Medienverantwortliche < ::Role
@@ -56,7 +56,7 @@ class Group::KantonaleOrganisation < ::Group
     Sicherheitsbeauftragte,
     Energieteamleitende,
     Nachhaltigkeitsverantwortliche,
-    Theologin,
-    Pfarrerin,
+    Theologe,
+    Pfarrer,
     Medienverantwortliche
 end

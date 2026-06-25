@@ -19,11 +19,11 @@ class Group::DachverbandKontakte < ::Group
   class Leistungsvereinbarung < ::Role
   end
 
-  class Journalistin < ::Role
+  class Journalist < ::Role
   end
 
-  class AutorinSchZ < ::Role
+  class AutorSchZ < ::Role
   end
 
-  roles Kontakt, Mitarbeitender, Leistungsvereinbarung, Journalistin, AutorinSchZ
+  roles Kontakt, Mitarbeitender, Leistungsvereinbarung, Journalist, AutorSchZ
 end

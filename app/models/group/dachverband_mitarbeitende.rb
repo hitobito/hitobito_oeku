@@ -18,16 +18,16 @@ class Group::DachverbandMitarbeitende < ::Group
     self.permissions = [:layer_and_below_full, :approve_applications, :finance]
   end
 
-  class Quaestorin < ::Role
+  class Quaestor < ::Role
     self.permissions = [:layer_and_below_full, :approve_applications, :finance]
   end
 
-  class Revisorin < ::Role
+  class Revisor < ::Role
     self.permissions = [:layer_and_below_full, :approve_applications, :finance]
   end
 
-  class KirchlicheUmweltauditorin < ::Role
+  class KirchlicheUmweltauditor < ::Role
   end
 
-  roles Mitarbeitender, Administration, Quaestorin, Revisorin, KirchlicheUmweltauditorin
+  roles Mitarbeitender, Administration, Quaestor, Revisor, KirchlicheUmweltauditor
 end
