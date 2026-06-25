@@ -10,5 +10,4 @@ module Oeku::Group
 
     root_types Group::Dachverband
   end
-
 end
