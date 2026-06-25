@@ -3,14 +3,12 @@
 require Rails.root.join("db", "seeds", "support", "person_seeder")
 
 class OekuPersonSeeder < PersonSeeder
-
   def amount(role_type)
     case role_type.name.demodulize
-    when "Member" then 5
+    when /mitglied|organisation|kontakt/i then (2..4).to_a.sample
     else 1
     end
   end
-
 end
 
 puzzlers = [
@@ -23,7 +21,7 @@ puzzlers = [
   "Andreas Maierhofer",
   "Nils Rauch",
   "Matthias Viehweger",
-  "Pascal Zumkehr",
+  "Pascal Zumkehr"
 ]
 
 devs = {
@@ -39,5 +37,5 @@ seeder.seed_all_roles
 
 root = Group.root
 devs.each do |name, email|
-  seeder.seed_developer(name, email, root, Group::Root::Leader)
+  seeder.seed_developer(name, email, root, Group::Dachverband::Administratorin)
 end
