@@ -27,7 +27,7 @@ puzzlers = [
 ]
 
 devs = {
-  "Customer Name" => "customer@email.com"
+  "Milena Hartmann" => "hartmann@oeku.ch"
 }
 puzzlers.each do |puz|
   devs[puz] = "#{puz.split.last.downcase.gsub("ü", "ue").gsub("ä", "ae")}@puzzle.ch"
