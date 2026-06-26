@@ -1,1 +1,439 @@
 it:
+  activerecord:
+    models:
+
+      ### GROUPS
+
+      group/dachverband:
+        one: Dachverband
+        other: Dachverbände
+
+      group/dachverband_mitarbeitende:
+        one: Mitarbeitende
+        other: Mitarbeitende
+
+      group/dachverband_vorstand:
+        one: Vorstand
+        other: Vorstände
+
+      group/dachverband_mitglieder:
+        one: Mitglieder
+        other: Mitglieder
+
+      group/dachverband_kontakte: Kontakte
+
+      group/dachverband_gruener_guegel: Grüner Güggel
+
+      group/nationale_organisation:
+        one: Nationale Organisation
+        other: Nationale Organisationen
+
+      group/nationale_organisation_mitarbeitende:
+        one: Mitarbeitende
+        other: Mitarbeitende
+
+      group/nationale_organisation_synodalrat:
+        one: Synodalrat
+        other: Synodalräte
+
+      group/kantonale_organisation:
+        one: Kantonale Organisation
+        other: Kantonale Organisationen
+
+      group/kantonale_organisation_mitarbeitende:
+        one: Mitarbeitende
+        other: Mitarbeitende
+
+      group/kantonale_organisation_synodalrat:
+        one: Synodalrat
+        other: Synodalräte
+
+      group/bistum:
+        one: Bistum
+        other: Bistümer
+
+      group/bistum_mitarbeitende:
+        one: Mitarbeitende
+        other: Mitarbeitende
+
+      group/kirchgemeinde:
+        one: Kirchgemeinde
+        other: Kirchgemeinden
+
+      group/kirchgemeinde_mitarbeitende:
+        one: Mitarbeitende
+        other: Mitarbeitende
+
+      group/kirchgemeinde_synodalrat:
+        one: Synodalrat
+        other: Synodalräte
+
+      group/kirchgemeinde_kirchgemeinderat:
+        one: Kirchgemeinderat
+        other: Kirchgemeinderäte
+
+      group/kontakte:
+        one: Kontakte
+        other: Kontakte
+
+      ### ROLES
+
+      group/dachverband/administrator:
+        one: "Administrator:in"
+        other: "Administrator:innen"
+
+      group/dachverband_mitarbeitende/mitarbeitender:
+        one: "Mitarbeitende:r"
+        other: Mitarbeitende
+
+      group/dachverband_mitarbeitende/administration:
+        one: Administration
+        other: Administrationen
+
+      group/dachverband_mitarbeitende/quaestor:
+        one: "Quästor:in"
+        other: "Quästor:innen"
+
+      group/dachverband_mitarbeitende/revisor:
+        one: "Revisor:in"
+        other: "Revisor:innen"
+
+      group/dachverband_mitarbeitende/kirchliche_umweltauditor:
+        one: "Kirchliche:r Umweltauditor:in"
+        other: "Kirchliche Umweltauditor:innen"
+
+      group/dachverband_vorstand/praesident:
+        one: "Präsident:in"
+        other: "Präsident:innen"
+
+      group/dachverband_vorstand/vizepraesident:
+        one: "Vizepräsident:in"
+        other: "Vizepräsident:innen"
+
+      group/dachverband_vorstand/vorstandsmitglied:
+        one: Vorstandsmitglied
+        other: Vorstandsmitglieder
+
+      group/dachverband_mitglieder/einzelmitglied:
+        one: Einzelmitglied
+        other: Einzelmitglieder
+
+      group/dachverband_mitglieder/kollektivmitglied:
+        one: Kollektivmitglied
+        other: Kollektivmitglieder
+
+      group/dachverband_mitglieder/erstspender:
+        one: "Erstspender:in"
+        other: "Erstspender:innen"
+
+      group/dachverband_kontakte/kontakt:
+        one: Kontakt
+        other: Kontakte
+
+      group/dachverband_kontakte/mitarbeitender:
+        one: "Mitarbeitende:r"
+        other: Mitarbeitende
+
+      group/dachverband_kontakte/leistungsvereinbarung:
+        one: Leistungsvereinbarung
+        other: Leistungsvereinbarungen
+
+      group/dachverband_kontakte/journalist:
+        one: "Journalist:in"
+        other: "Journalist:innen"
+
+      group/dachverband_kontakte/autor_sch_z:
+        one: "Autor:in SchZ"
+        other: "Autor:innen SchZ"
+
+      group/dachverband_gruener_guegel/zertifiziert:
+        one: Zertifiziert
+        other: Zertifizierte
+
+      group/dachverband_gruener_guegel/aufnahmeprozess:
+        one: Aufnahmeprozess
+        other: Aufnahmeprozesse
+
+      group/dachverband_gruener_guegel/interessiert:
+        one: Interessiert
+        other: Interessierte
+
+      group/nationale_organisation/organisation:
+        one: Organisation
+        other: Organisationen
+
+      group/nationale_organisation/kirchliche_umweltberatende:
+        one: "Kirchliche:r Umweltberatende:r"
+        other: "Kirchliche Umweltberatende"
+
+      group/nationale_organisation/kirchliche_umweltmanagementbeauftragte:
+        one: "Kirchliche:r Umweltmanagementbeauftragte:r"
+        other: "Kirchliche Umweltmanagementbeauftragte"
+
+      group/nationale_organisation/kirchliche_umweltbeauftragte:
+        one: "Kirchliche:r Umweltbeauftragte:r"
+        other: "Kirchliche Umweltbeauftragte"
+
+      group/nationale_organisation/sicherheitsbeauftragte:
+        one: "Sicherheitsbeauftragte:r"
+        other: Sicherheitsbeauftragte
+
+      group/nationale_organisation/energieteamleitende:
+        one: "Energieteamleitende:r"
+        other: Energieteamleitende
+
+      group/nationale_organisation/nachhaltigkeitsverantwortliche:
+        one: "Nachhaltigkeitsverantwortliche:r"
+        other: Nachhaltigkeitsverantwortliche
+
+      group/nationale_organisation/bischof:
+        one: Bischof
+        other: Bischöfe
+
+      group/nationale_organisation/theologe:
+        one: "Theolog:in"
+        other: "Theolog:innen"
+
+      group/nationale_organisation/pfarrer:
+        one: "Pfarrer:in"
+        other: "Pfarrer:innen"
+
+      group/nationale_organisation/medienverantwortliche:
+        one: "Medienverantwortliche:r"
+        other: Medienverantwortliche
+
+      group/nationale_organisation_mitarbeitende/mitarbeitender:
+        one: "Mitarbeitende:r"
+        other: Mitarbeitende
+
+      group/nationale_organisation_mitarbeitende/administration:
+        one: Administration
+        other: Administrationen
+
+      group/nationale_organisation_mitarbeitende/generalsekretaer:
+        one: "Generalsekretär:in"
+        other: "Generalsekretär:innen"
+
+      group/nationale_organisation_synodalrat/synodalratspraesident:
+        one: "Synodalratspräsident:in"
+        other: "Synodalratspräsident:innen"
+
+      group/nationale_organisation_synodalrat/synodale:
+        one: Synodale:r
+        other: Synodale
+
+      group/kantonale_organisation/organisation:
+        one: Organisation
+        other: Organisationen
+
+      group/kantonale_organisation/kirchliche_umweltberatende:
+        one: "Kirchliche:r Umweltberatende:r"
+        other: "Kirchliche Umweltberatende"
+
+      group/kantonale_organisation/kirchliche_umweltmanagementbeauftragte:
+        one: "Kirchliche:r Umweltmanagementbeauftragte:r"
+        other: "Kirchliche Umweltmanagementbeauftragte"
+
+      group/kantonale_organisation/kirchliche_umweltbeauftragte:
+        one: "Kirchliche:r Umweltbeauftragte:r"
+        other: "Kirchliche Umweltbeauftragte"
+
+      group/kantonale_organisation/sicherheitsbeauftragte:
+        one: "Sicherheitsbeauftragte:r"
+        other: Sicherheitsbeauftragte
+
+      group/kantonale_organisation/energieteamleitende:
+        one: "Energieteamleitende:r"
+        other: Energieteamleitende
+
+      group/kantonale_organisation/nachhaltigkeitsverantwortliche:
+        one: "Nachhaltigkeitsverantwortliche:r"
+        other: Nachhaltigkeitsverantwortliche
+
+      group/kantonale_organisation/theologe:
+        one: "Theolog:in"
+        other: "Theolog:innen"
+
+      group/kantonale_organisation/pfarrer:
+        one: "Pfarrer:in"
+        other: "Pfarrer:innen"
+
+      group/kantonale_organisation/medienverantwortliche:
+        one: "Medienverantwortliche:r"
+        other: Medienverantwortliche
+
+      group/kantonale_organisation_mitarbeitende/mitarbeitender:
+        one: "Mitarbeitende:r"
+        other: Mitarbeitende
+
+      group/kantonale_organisation_mitarbeitende/administration:
+        one: Administration
+        other: Administrationen
+
+      group/kantonale_organisation_mitarbeitende/generalsekretaer:
+        one: "Generalsekretär:in"
+        other: "Generalsekretär:innen"
+
+      group/kantonale_organisation_synodalrat/synodalratspraesident:
+        one: "Synodalratspräsident:in"
+        other: "Synodalratspräsident:innen"
+
+      group/kantonale_organisation_synodalrat/synodale:
+        one: Synodale:r
+        other: Synodale
+
+      group/bistum/organisation:
+        one: Organisation
+        other: Organisationen
+
+      group/bistum/kirchliche_umweltberatende:
+        one: "Kirchliche:r Umweltberatende:r"
+        other: "Kirchliche Umweltberatende"
+
+      group/bistum/kirchliche_umweltmanagementbeauftragte:
+        one: "Kirchliche:r Umweltmanagementbeauftragte:r"
+        other: "Kirchliche Umweltmanagementbeauftragte"
+
+      group/bistum/kirchliche_umweltbeauftragte:
+        one: "Kirchliche:r Umweltbeauftragte:r"
+        other: "Kirchliche Umweltbeauftragte"
+
+      group/bistum/sicherheitsbeauftragte:
+        one: "Sicherheitsbeauftragte:r"
+        other: Sicherheitsbeauftragte
+
+      group/bistum/energieteamleitende:
+        one: "Energieteamleitende:r"
+        other: Energieteamleitende
+
+      group/bistum/nachhaltigkeitsverantwortliche:
+        one: "Nachhaltigkeitsverantwortliche:r"
+        other: Nachhaltigkeitsverantwortliche
+
+      group/bistum/bischof:
+        one: Bischof
+        other: Bischöfe
+
+      group/bistum/theologe:
+        one: "Theolog:in"
+        other: "Theolog:innen"
+
+      group/bistum/pfarrer:
+        one: "Pfarrer:in"
+        other: "Pfarrer:innen"
+
+      group/bistum/medienverantwortliche:
+        one: "Medienverantwortliche:r"
+        other: Medienverantwortliche
+
+      group/bistum_mitarbeitende/mitarbeitender:
+        one: "Mitarbeitende:r"
+        other: Mitarbeitende
+
+      group/bistum_mitarbeitende/administration:
+        one: Administration
+        other: Administrationen
+
+      group/bistum_mitarbeitende/generalsekretaer:
+        one: "Generalsekretär:in"
+        other: "Generalsekretär:innen"
+
+      group/kirchgemeinde/organisation:
+        one: Organisation
+        other: Organisationen
+
+      group/kirchgemeinde/kirchliche_umweltberatende:
+        one: "Kirchliche:r Umweltberatende:r"
+        other: "Kirchliche Umweltberatende"
+
+      group/kirchgemeinde/kirchliche_umweltmanagementbeauftragte:
+        one: "Kirchliche:r Umweltmanagementbeauftragte:r"
+        other: "Kirchliche Umweltmanagementbeauftragte"
+
+      group/kirchgemeinde/kirchliche_umweltbeauftragte:
+        one: "Kirchliche:r Umweltbeauftragte:r"
+        other: "Kirchliche Umweltbeauftragte"
+
+      group/kirchgemeinde/sicherheitsbeauftragte:
+        one: "Sicherheitsbeauftragte:r"
+        other: Sicherheitsbeauftragte
+
+      group/kirchgemeinde/energieteamleitende:
+        one: "Energieteamleitende:r"
+        other: Energieteamleitende
+
+      group/kirchgemeinde/nachhaltigkeitsverantwortliche:
+        one: "Nachhaltigkeitsverantwortliche:r"
+        other: Nachhaltigkeitsverantwortliche
+
+      group/kirchgemeinde/theologe:
+        one: "Theolog:in"
+        other: "Theolog:innen"
+
+      group/kirchgemeinde/pfarrer:
+        one: "Pfarrer:in"
+        other: "Pfarrer:innen"
+
+      group/kirchgemeinde/diakon:
+        one: "Diakon:in"
+        other: "Diakon:innen"
+
+      group/kirchgemeinde/pfarreileitende:
+        one: "Pfarreileitende:r"
+        other: Pfarreileitende
+
+      group/kirchgemeinde/medienverantwortliche:
+        one: "Medienverantwortliche:r"
+        other: Medienverantwortliche
+
+      group/kirchgemeinde_mitarbeitende/mitarbeitender:
+        one: "Mitarbeitende:r"
+        other: Mitarbeitende
+
+      group/kirchgemeinde_mitarbeitende/administration:
+        one: Administration
+        other: Administrationen
+
+      group/kirchgemeinde_mitarbeitende/generalsekretaer:
+        one: "Generalsekretär:in"
+        other: "Generalsekretär:innen"
+
+      group/kirchgemeinde_synodalrat/synodalratspraesident:
+        one: "Synodalratspräsident:in"
+        other: "Synodalratspräsident:innen"
+
+      group/kirchgemeinde_synodalrat/synodale:
+        one: Synodale:r
+        other: Synodale
+
+      group/kirchgemeinde_kirchgemeinderat/kirchgemeinderatspraesident:
+        one: "Kirchgemeinderatspräsident:in"
+        other: "Kirchgemeinderatspräsident:innen"
+
+      group/kirchgemeinde_kirchgemeinderat/mitglied:
+        one: Mitglied
+        other: Mitglieder
+
+      group/kontakte/vorstand:
+        one: Vorstand
+        other: Vorstände
+
+      group/kontakte/kontakt:
+        one: Kontakt
+        other: Kontakte
+
+      group/kontakte/mitarbeitender:
+        one: "Mitarbeitende:r"
+        other: Mitarbeitende
+
+      group/kontakte/medienverantwortliche:
+        one: "Medienverantwortliche:r"
+        other: Medienverantwortliche
+
+      group/kontakte/leistungsvereinbarung:
+        one: Leistungsvereinbarung
+        other: Leistungsvereinbarungen
+
+      group/kontakte/journalist:
+        one: "Journalist:in"
+        other: "Journalist:innen"
