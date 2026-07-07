@@ -6,7 +6,6 @@
 #  https://github.com/hitobito/hitobito_oeku.
 
 class Group::KirchgemeindeMitarbeitende < ::Group
-
   ### ROLES
 
   class Mitarbeitender < ::Role
