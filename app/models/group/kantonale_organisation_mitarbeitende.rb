@@ -6,8 +6,6 @@
 #  https://github.com/hitobito/hitobito_oeku.
 
 class Group::KantonaleOrganisationMitarbeitende < ::Group
-  self.static_name = true
-
   ### ROLES
 
   class Mitarbeitender < ::Role

@@ -6,8 +6,6 @@
 #  https://github.com/hitobito/hitobito_oeku.
 
 class Group::DachverbandVorstand < ::Group
-  self.static_name = true
-
   ### ROLES
 
   class Praesident < ::Role

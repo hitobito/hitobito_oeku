@@ -6,8 +6,6 @@
 #  https://github.com/hitobito/hitobito_oeku.
 
 class Group::KirchgemeindeKirchgemeinderat < ::Group
-  self.static_name = true
-
   ### ROLES
 
   class Kirchgemeinderatspraesident < ::Role
