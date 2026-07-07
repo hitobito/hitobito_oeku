@@ -2,7 +2,7 @@
 # Overrides settings from the main application
 application:
   logo:
-    image: logo-white.svg
+    image: logo-gray.svg
     width: 200
     height: 68
     background_color: none
