@@ -1,0 +1,22 @@
+#page-header {
+
+  &>a {
+    color: lighten($black, 10%);
+
+    &:hover,
+    &:active {
+      color: $black;
+    }
+  }
+
+  .is-logged-out & {
+    a {
+      color: lighten($black, 10%);
+
+      &:hover,
+      &:active {
+        color: $black;
+      }
+    }
+  }
+}

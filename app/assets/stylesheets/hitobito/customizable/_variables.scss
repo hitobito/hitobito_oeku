@@ -1,2 +1,114 @@
-// $oeku_green: #72bf00;
-// $page-background: $oeku_green;
+//  Copyright (c) 2025, oeku Kirche und Umwelt. This file is part of
+//  hitobito_oeku and licensed under the Affero General Public License version 3
+//  or later. See the COPYING file at the top-level directory or at
+//  https://github.com/hitobito/hitobito_oeku.
+
+// design-manual colors
+$oeku_green: #72bf00;
+$oeku_white: #fff;
+$oeku_gray: #e5e5e5;
+$oeku_red: #931D1B;
+$oeku_online_red: #C00000;
+
+// topic colors
+$oeku_bright_turquoise: #8bbdbe;
+$oeku_turquoise: #00a2a3;
+$oeku_orange: #e67d39;
+$oeku_pink: #f4beca;
+$oeku_dark_pink: #a67c87;
+$oeku_bright_red: #e30713;
+
+// actual online colors
+$oeku_dark_beige: #d9d8d5;
+$oeku_beige: #f1f0ed;
+$oeku_blue: #286d9a;
+
+
+// Grays
+// -------------------------
+$black: #474E5D !default;
+$gray-darker: #797E89 !default;
+$gray-dark: #8b8b8b !default;
+$gray: #979CA6 !default;
+$gray-light: #E8EBF0 !default;
+$gray-lighter: #F8F9FA !default;
+$white: #fff !default;
+
+// Colors
+// ----------------------------
+
+$orange: $oeku_orange;
+$orange-dark: darken($orange, 20%);
+$purple: $oeku_dark_pink;
+$purple-dark: darken($purple, 20%);
+
+$red: $oeku_red !default;
+
+$text-color: $black !default;
+$border-color: $gray-light !default;
+
+$page-background: $oeku_dark_beige;
+$content-background: $oeku_beige;
+$footer-background: $oeku_gray;
+$body-background: $oeku_gray;
+
+// for buttons
+$blue: $oeku_green;
+$blue-dark: darken($oeku_green, 10%) !default;
+
+// $header-text-color:     $text-color;
+$focus-color: $oeku_red;
+$shadow-color: darken($page-background, 10%);
+$link-color: $oeku_green !default;
+$link-color-hover: darken($oeku_green, 20%) !default;
+
+$footer-color: $black;
+$footer-color-hover: lighten($black, 20%);
+
+$table-color-hover: $oeku_dark_beige;
+
+// Typography
+// -------------------------
+
+$sans-font-family: 'Roboto', 'Verdana', sans-serif;
+$heading-font-family: 'Roboto', 'Verdana', sans-serif; //'Quicksand', $sans-font-family !default;
+$font-family-base: 'Roboto', 'Verdana', sans-serif; //'Varela Round', $sans-font-family !default;
+$headings-font-weight: bold !default; // could be "normal" instead of browser default, "bold"
+
+// Decoration
+// -------------------------
+$border-radius: 6px;
+
+// Rhythm
+// -------------------------
+$v-space: 24px;
+
+
+// FLUID GRID
+// --------------------------------------------------
+
+// Default
+// -------------------------
+$fluid-grid-column-width: 6.382978723% !default;
+$fluid-grid-gutter-width: 2.127659574% !default;
+
+// Portrait tablet to default desktop
+// -------------------------
+$fluid-grid-column-width-tablet: 5.801104972% !default;
+$fluid-grid-gutter-width-tablet: 2.762430939% !default;
+
+// Large desktop and up
+// -------------------------
+$fluid-grid-column-width-large: 5.982905983% !default;
+$fluid-grid-gutter-width-large: 2.564102564% !default;
+
+
+// RESPONSIVE DESIGN
+// --------------------------------------------------
+
+// Media widths
+// -------------------------
+$media-phone: 480px !default;
+$media-tablet: 768px !default;
+$media-desktop: 980px !default;
+$media-large: 1200px !default; // and upper
