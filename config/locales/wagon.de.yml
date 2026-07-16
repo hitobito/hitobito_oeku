@@ -437,3 +437,7 @@ de:
       group/kontakte/journalist:
         one: "Journalist:in"
         other: "Journalist:innen"
+
+    attributes:
+      person:
+        anzahl_schoepfungszeit: Anzahl SchöpfungsZeit
