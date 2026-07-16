@@ -17,6 +17,9 @@ module HitobitoOeku
     config.to_prepare do
       # extend application classes here
       Group.include Oeku::Group
+      Person.include Oeku::Person
+
+      PeopleController.permitted_attrs += [:anzahl_schoepfungszeit]
     end
 
     initializer "oeku.add_settings" do |_app|
