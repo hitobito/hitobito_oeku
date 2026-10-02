@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-#  Copyright (c) 2025, oeku Kirche und Umwelt. This file is part of
+#  Copyright (c) 2025-2026, oeku Kirche und Umwelt. This file is part of
 #  hitobito_oeku and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_oeku.
@@ -42,6 +42,13 @@ describe Person do
     it "returns the translated label" do
       expect(Person.new(confession: "christkatholisch").confession_label)
         .to eq("Christkatholisch")
+    end
+  end
+
+  describe ".filter_attrs" do
+    it "includes confession as i18n_enum filter" do
+      expect(Person.filter_attrs[:confession])
+        .to eq(label: "Konfession", type: :i18n_enum)
     end
   end
 end
