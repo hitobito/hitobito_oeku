@@ -8,7 +8,12 @@
 module Oeku::Person
   extend ActiveSupport::Concern
 
+  CONFESSIONS = %w[reformiert katholisch christkatholisch methodistisch lutheranisch other].freeze
+
   included do
+    i18n_enum :confession, CONFESSIONS
+    i18n_setter :confession, CONFESSIONS
+
     validates :anzahl_schoepfungszeit,
       numericality: {only_integer: true, greater_than_or_equal_to: 0, less_than_or_equal_to: 9999},
       allow_nil: true

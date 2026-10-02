@@ -25,4 +25,23 @@ describe Person do
       expect(Person.new(last_name: "dummy", anzahl_schoepfungszeit: nil)).to be_valid
     end
   end
+
+  describe "#confession" do
+    it "accepts a valid confession" do
+      expect(Person.new(last_name: "dummy", confession: "reformiert")).to be_valid
+    end
+
+    it "rejects an unknown confession" do
+      expect(Person.new(last_name: "dummy", confession: "pastafari")).not_to be_valid
+    end
+
+    it "allows a blank value" do
+      expect(Person.new(last_name: "dummy", confession: nil)).to be_valid
+    end
+
+    it "returns the translated label" do
+      expect(Person.new(confession: "christkatholisch").confession_label)
+        .to eq("Christkatholisch")
+    end
+  end
 end
