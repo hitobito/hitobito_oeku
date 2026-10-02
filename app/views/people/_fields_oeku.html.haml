@@ -4,4 +4,5 @@
 -#  https://github.com/hitobito/hitobito_oeku.
 
 = field_set_tag do
+  = f.labeled_i18n_enum_field(:confession, Person.confession_labels, include_blank: true)
   = f.labeled_input_field(:anzahl_schoepfungszeit, maxlength: 4, size: 4, pattern: "[0-9]*", inputmode: "numeric")

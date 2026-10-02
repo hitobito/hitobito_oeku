@@ -441,3 +441,11 @@ de:
     attributes:
       person:
         anzahl_schoepfungszeit: Anzahl SchöpfungsZeit
+        confession: Konfession
+        confessions:
+          reformiert: Reformiert
+          katholisch: Katholisch
+          christkatholisch: Christkatholisch
+          methodistisch: Methodistisch
+          lutheranisch: Lutheranisch
+          other: Andere
