@@ -19,7 +19,8 @@ module HitobitoOeku
       Group.include Oeku::Group
       Person.include Oeku::Person
 
-      PeopleController.permitted_attrs += [:anzahl_schoepfungszeit]
+      PeopleController.permitted_attrs += [:anzahl_schoepfungszeit, :confession]
+      TableDisplay.register_column(Person, TableDisplays::PublicColumn, :confession)
     end
 
     initializer "oeku.add_settings" do |_app|
