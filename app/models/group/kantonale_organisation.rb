@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-#  Copyright (c) 2025, oeku Kirche und Umwelt. This file is part of
+#  Copyright (c) 2025-2026, oeku Kirche und Umwelt. This file is part of
 #  hitobito_oeku and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_oeku.
@@ -8,18 +8,17 @@
 class Group::KantonaleOrganisation < ::Group
   self.layer = true
 
-  children KantonaleOrganisationMitarbeitende,
-    KantonaleOrganisationSynodalrat,
+  children KantonaleOrganisationSynode,
     Kirchgemeinde
 
-  self.default_children = [
-    KantonaleOrganisationMitarbeitende,
-    KantonaleOrganisationSynodalrat
-  ]
+  self.default_children = [KantonaleOrganisationSynode]
 
   ### ROLES
 
-  class Organisation < ::Role
+  class Geschaeftsstelle < ::Role
+  end
+
+  class KirchlicheUmweltauditor < ::Role
   end
 
   class KirchlicheUmweltberatende < ::Role
@@ -43,13 +42,23 @@ class Group::KantonaleOrganisation < ::Group
   class Theologe < ::Role
   end
 
-  class Pfarrer < ::Role
-  end
-
   class Medienverantwortliche < ::Role
   end
 
-  roles Organisation,
+  class Mitarbeitender < ::Role
+    self.permissions = [:layer_full]
+  end
+
+  class Administration < ::Role
+    self.permissions = [:layer_full]
+  end
+
+  class Generalsekretaer < ::Role
+    self.permissions = [:layer_full]
+  end
+
+  roles Geschaeftsstelle,
+    KirchlicheUmweltauditor,
     KirchlicheUmweltberatende,
     KirchlicheUmweltmanagementbeauftragte,
     KirchlicheUmweltbeauftragte,
@@ -57,6 +66,8 @@ class Group::KantonaleOrganisation < ::Group
     Energieteamleitende,
     Nachhaltigkeitsverantwortliche,
     Theologe,
-    Pfarrer,
-    Medienverantwortliche
+    Medienverantwortliche,
+    Mitarbeitender,
+    Administration,
+    Generalsekretaer
 end
