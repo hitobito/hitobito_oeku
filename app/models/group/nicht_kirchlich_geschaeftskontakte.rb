@@ -1,25 +1,12 @@
 # frozen_string_literal: true
 
-#  Copyright (c) 2025, oeku Kirche und Umwelt. This file is part of
+#  Copyright (c) 2025-2026, oeku Kirche und Umwelt. This file is part of
 #  hitobito_oeku and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_oeku.
 
-class Group::Kontakte < ::Group
-  self.layer = true
-
-  children Kontakte
-
+class Group::NichtKirchlichGeschaeftskontakte < ::Group
   ### ROLES
-
-  class Vorstand < ::Role
-  end
-
-  class Kontakt < ::Role
-  end
-
-  class Mitarbeitender < ::Role
-  end
 
   class Medienverantwortliche < ::Role
   end
@@ -30,5 +17,5 @@ class Group::Kontakte < ::Group
   class Journalist < ::Role
   end
 
-  roles Vorstand, Kontakt, Mitarbeitender, Medienverantwortliche, Leistungsvereinbarung, Journalist
+  roles Medienverantwortliche, Leistungsvereinbarung, Journalist
 end

@@ -2,13 +2,13 @@
 
 root = Group.roots.first
 
-# Nationale Organisationen
+# Kirchliche Organisationen
 
-eks = Group::NationaleOrganisation.seed_once(:name,
+eks = Group::Kirchlich.seed_once(:name,
   parent_id: root.id,
   name: "Evangelisch-reformierte Kirche Schweiz (EKS)").first
 
-sbk = Group::NationaleOrganisation.seed_once(:name,
+sbk = Group::Kirchlich.seed_once(:name,
   parent_id: root.id,
   name: "Schweizer Bischofskonferenz (SBK)").first
 
@@ -69,9 +69,9 @@ Group::Bistum.seed_once(:name,
   parent_id: sbk.id,
   name: "Bistum Chur")
 
-# Kontakte-Layer
+# Nicht kirchliche Organisationen
 
-Group::Kontakte.seed_once(:name,
+Group::NichtKirchlich.seed_once(:name,
   parent_id: root.id,
   name: "Partnernetzwerk")
 

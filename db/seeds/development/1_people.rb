@@ -5,7 +5,7 @@ require Rails.root.join("db", "seeds", "support", "person_seeder")
 class OekuPersonSeeder < PersonSeeder
   def amount(role_type)
     case role_type.name.demodulize
-    when /mitglied|organisation|kontakt/i then (2..4).to_a.sample
+    when /mitglied|geschaeftsstelle|sekretariat/i then (2..4).to_a.sample
     else 1
     end
   end

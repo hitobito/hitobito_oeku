@@ -5,5 +5,5 @@ admin:
 
 member:
   person: member
-  group: mitglieder
-  type: Group::DachverbandMitglieder::Einzelmitglied
+  group: einzelmitglieder
+  type: Group::DachverbandEinzelmitglieder::Einzelmitglied

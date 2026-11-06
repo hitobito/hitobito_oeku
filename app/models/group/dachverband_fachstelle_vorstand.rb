@@ -1,16 +1,12 @@
 # frozen_string_literal: true
 
-#  Copyright (c) 2025, oeku Kirche und Umwelt. This file is part of
+#  Copyright (c) 2025-2026, oeku Kirche und Umwelt. This file is part of
 #  hitobito_oeku and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_oeku.
 
-class Group::DachverbandMitarbeitende < ::Group
+class Group::DachverbandFachstelleVorstand < ::Group
   ### ROLES
-
-  class Mitarbeitender < ::Role
-    self.permissions = [:layer_and_below_full, :approve_applications, :finance]
-  end
 
   class Administration < ::Role
     self.permissions = [:layer_and_below_full, :approve_applications, :finance]
@@ -24,8 +20,17 @@ class Group::DachverbandMitarbeitende < ::Group
     self.permissions = [:layer_and_below_full, :approve_applications, :finance]
   end
 
-  class KirchlicheUmweltauditor < ::Role
+  class Praesident < ::Role
+    self.permissions = [:group_read]
   end
 
-  roles Mitarbeitender, Administration, Quaestor, Revisor, KirchlicheUmweltauditor
+  class Vizepraesident < ::Role
+    self.permissions = [:group_read]
+  end
+
+  class Vorstandsmitglied < ::Role
+    self.permissions = [:group_read]
+  end
+
+  roles Administration, Quaestor, Revisor, Praesident, Vizepraesident, Vorstandsmitglied
 end

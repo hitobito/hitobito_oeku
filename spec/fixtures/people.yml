@@ -10,4 +10,4 @@ member:
   first_name: My
   last_name: Member
   email: member@example.com
-  primary_group: mitarbeitende
+  primary_group: einzelmitglieder
