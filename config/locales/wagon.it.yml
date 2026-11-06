@@ -5,26 +5,68 @@ it:
       ### GROUPS
 
       group/dachverband:
-        one: Dachverband
-        other: Dachverbände
+        one: "Dachverband"
+        other: "Dachverbände"
 
-      group/dachverband_gruener_guegel: Grüner Güggel
+      group/dachverband_fachstelle_vorstand:
+        one: "Fachstelle/Vorstand"
+        other: "Fachstelle/Vorstand"
+
+      group/dachverband_einzelmitglieder:
+        one: "Einzelmitglieder"
+        other: "Einzelmitglieder"
+
+      group/dachverband_kollektivmitglieder:
+        one: "Kollektivmitglieder"
+        other: "Kollektivmitglieder"
+
+      group/dachverband_erstspendende:
+        one: "Erstspendende"
+        other: "Erstspendende"
+
+      group/dachverband_schoepfungstheologie:
+        one: "Schöpfungstheologie"
+        other: "Schöpfungstheologie"
+
+      group/dachverband_gruener_guegel:
+        one: "Grüner Güggel"
+        other: "Grüner Güggel"
+
+      group/kirchlich:
+        one: "Kirchlich"
+        other: "Kirchlich"
+
+      group/kirchlich_synode:
+        one: "Synode"
+        other: "Synoden"
 
       group/kantonale_organisation:
-        one: Kantonale Organisation
-        other: Kantonale Organisationen
+        one: "Kantonale Organisation"
+        other: "Kantonale Organisationen"
+
+      group/kantonale_organisation_synode:
+        one: "Synode"
+        other: "Synoden"
 
       group/bistum:
-        one: Bistum
-        other: Bistümer
+        one: "Bistum"
+        other: "Bistümer"
 
       group/kirchgemeinde:
-        one: Kirchgemeinde
-        other: Kirchgemeinden
+        one: "Kirchgemeinde"
+        other: "Kirchgemeinden"
 
       group/kirchgemeinde_kirchgemeinderat:
-        one: Kirchgemeinderat
-        other: Kirchgemeinderäte
+        one: "Kirchgemeinderat"
+        other: "Kirchgemeinderäte"
+
+      group/nicht_kirchlich:
+        one: "Nicht kirchlich"
+        other: "Nicht kirchlich"
+
+      group/nicht_kirchlich_geschaeftskontakte:
+        one: "Geschäftskontakte"
+        other: "Geschäftskontakte"
 
       ### ROLES
 
@@ -32,37 +74,153 @@ it:
         one: "Administrator:in"
         other: "Administrator:innen"
 
+      group/dachverband_fachstelle_vorstand/administration:
+        one: "Administration"
+        other: "Administrationen"
+
+      group/dachverband_fachstelle_vorstand/quaestor:
+        one: "Quästor:in"
+        other: "Quästor:innen"
+
+      group/dachverband_fachstelle_vorstand/revisor:
+        one: "Revisor:in"
+        other: "Revisor:innen"
+
+      group/dachverband_fachstelle_vorstand/praesident:
+        one: "Präsident:in"
+        other: "Präsident:innen"
+
+      group/dachverband_fachstelle_vorstand/vizepraesident:
+        one: "Vizepräsident:in"
+        other: "Vizepräsident:innen"
+
+      group/dachverband_fachstelle_vorstand/vorstandsmitglied:
+        one: "Vorstandsmitglied"
+        other: "Vorstandsmitglieder"
+
+      group/dachverband_einzelmitglieder/einzelmitglied:
+        one: "Einzelmitglied"
+        other: "Einzelmitglieder"
+
+      group/dachverband_kollektivmitglieder/kollektivmitglied:
+        one: "Kollektivmitglied"
+        other: "Kollektivmitglieder"
+
+      group/dachverband_erstspendende/erstspender:
+        one: "Erstspender:in"
+        other: "Erstspender:innen"
+
+      group/dachverband_schoepfungstheologie/autor_sch_z:
+        one: "Autor:in SchZ"
+        other: "Autor:innen SchZ"
+
+      group/dachverband_schoepfungstheologie/oekuspiritualitaet:
+        one: "Oekuspiritualität"
+        other: "Oekuspiritualität"
+
       group/dachverband_gruener_guegel/zertifiziert:
-        one: Zertifiziert
-        other: Zertifizierte
+        one: "Zertifiziert"
+        other: "Zertifizierte"
 
       group/dachverband_gruener_guegel/aufnahmeprozess:
-        one: Aufnahmeprozess
-        other: Aufnahmeprozesse
+        one: "Aufnahmeprozess"
+        other: "Aufnahmeprozesse"
+
+      group/dachverband_gruener_guegel/rezertifiziert:
+        one: "Rezertifiziert"
+        other: "Rezertifizierte"
+
+      group/kirchlich/geschaeftsstelle:
+        one: "Geschäftsstelle"
+        other: "Geschäftsstellen"
+
+      group/kirchlich/kirchliche_umweltauditor:
+        one: "Kirchliche:r Umweltauditor:in"
+        other: "Kirchliche Umweltauditor:innen"
+
+      group/kirchlich/kirchliche_umweltberatende:
+        one: "Kirchliche:r Umweltberatende:r (KUB)"
+        other: "Kirchliche Umweltberatende (KUB)"
+
+      group/kirchlich/kirchliche_umweltmanagementbeauftragte:
+        one: "Kirchliche:r Umweltmanagementbeauftragte:r (UMB)"
+        other: "Kirchliche Umweltmanagementbeauftragte (UMB)"
+
+      group/kirchlich/kirchliche_umweltbeauftragte:
+        one: "Kirchliche:r Umweltbeauftragte:r (UB)"
+        other: "Kirchliche Umweltbeauftragte (UB)"
+
+      group/kirchlich/sicherheitsbeauftragte:
+        one: "Sicherheitsbeauftragte:r (SiBe)"
+        other: "Sicherheitsbeauftragte (SiBe)"
+
+      group/kirchlich/energieteamleitende:
+        one: "Energieteamleitende:r (ET)"
+        other: "Energieteamleitende (ET)"
+
+      group/kirchlich/nachhaltigkeitsverantwortliche:
+        one: "Nachhaltigkeitsverantwortliche:r"
+        other: "Nachhaltigkeitsverantwortliche"
+
+      group/kirchlich/bischof:
+        one: "Bischof"
+        other: "Bischöfe"
+
+      group/kirchlich/theologe:
+        one: "Theolog:in"
+        other: "Theolog:innen"
+
+      group/kirchlich/generalsekretaer:
+        one: "Generalsekretär:in"
+        other: "Generalsekretär:innen"
+
+      group/kirchlich/medienverantwortliche:
+        one: "Medienverantwortliche:r"
+        other: "Medienverantwortliche"
+
+      group/kirchlich_synode/synodalratspraesident:
+        one: "Synodalratspräsident:in"
+        other: "Synodalratspräsident:innen"
+
+      group/kirchlich_synode/synodalrat:
+        one: "Synodalrat"
+        other: "Synodalräte"
+
+      group/kirchlich_synode/synodale:
+        one: "Synodale:r"
+        other: "Synodale"
+
+      group/kantonale_organisation/geschaeftsstelle:
+        one: "Geschäftsstelle"
+        other: "Geschäftsstellen"
+
+      group/kantonale_organisation/kirchliche_umweltauditor:
+        one: "Kirchliche:r Umweltauditor:in"
+        other: "Kirchliche Umweltauditor:innen"
 
       group/kantonale_organisation/kirchliche_umweltberatende:
-        one: "Kirchliche:r Umweltberatende:r"
-        other: "Kirchliche Umweltberatende"
+        one: "Kirchliche:r Umweltberatende:r (KUB)"
+        other: "Kirchliche Umweltberatende (KUB)"
 
       group/kantonale_organisation/kirchliche_umweltmanagementbeauftragte:
-        one: "Kirchliche:r Umweltmanagementbeauftragte:r"
-        other: "Kirchliche Umweltmanagementbeauftragte"
+        one: "Kirchliche:r Umweltmanagementbeauftragte:r (UMB)"
+        other: "Kirchliche Umweltmanagementbeauftragte (UMB)"
 
       group/kantonale_organisation/kirchliche_umweltbeauftragte:
-        one: "Kirchliche:r Umweltbeauftragte:r"
-        other: "Kirchliche Umweltbeauftragte"
+        one: "Kirchliche:r Umweltbeauftragte:r (UB)"
+        other: "Kirchliche Umweltbeauftragte (UB)"
 
       group/kantonale_organisation/sicherheitsbeauftragte:
-        one: "Sicherheitsbeauftragte:r"
-        other: Sicherheitsbeauftragte
+        one: "Sicherheitsbeauftragte:r (SiBe)"
+        other: "Sicherheitsbeauftragte (SiBe)"
 
       group/kantonale_organisation/energieteamleitende:
-        one: "Energieteamleitende:r"
-        other: Energieteamleitende
+        one: "Energieteamleitende:r (ET)"
+        other: "Energieteamleitende (ET)"
 
       group/kantonale_organisation/nachhaltigkeitsverantwortliche:
         one: "Nachhaltigkeitsverantwortliche:r"
-        other: Nachhaltigkeitsverantwortliche
+        other: "Nachhaltigkeitsverantwortliche"
 
       group/kantonale_organisation/theologe:
         one: "Theolog:in"
@@ -70,35 +228,67 @@ it:
 
       group/kantonale_organisation/medienverantwortliche:
         one: "Medienverantwortliche:r"
-        other: Medienverantwortliche
+        other: "Medienverantwortliche"
+
+      group/kantonale_organisation/mitarbeitender:
+        one: "Mitarbeitende:r"
+        other: "Mitarbeitende"
+
+      group/kantonale_organisation/administration:
+        one: "Administration"
+        other: "Administrationen"
+
+      group/kantonale_organisation/generalsekretaer:
+        one: "Generalsekretär:in"
+        other: "Generalsekretär:innen"
+
+      group/kantonale_organisation_synode/synodalratspraesident:
+        one: "Synodalratspräsident:in"
+        other: "Synodalratspräsident:innen"
+
+      group/kantonale_organisation_synode/synodalrat:
+        one: "Synodalrat"
+        other: "Synodalräte"
+
+      group/kantonale_organisation_synode/synodale:
+        one: "Synodale:r"
+        other: "Synodale"
+
+      group/bistum/geschaeftsstelle:
+        one: "Geschäftsstelle"
+        other: "Geschäftsstellen"
+
+      group/bistum/kirchliche_umweltauditor:
+        one: "Kirchliche:r Umweltauditor:in"
+        other: "Kirchliche Umweltauditor:innen"
 
       group/bistum/kirchliche_umweltberatende:
-        one: "Kirchliche:r Umweltberatende:r"
-        other: "Kirchliche Umweltberatende"
+        one: "Kirchliche:r Umweltberatende:r (KUB)"
+        other: "Kirchliche Umweltberatende (KUB)"
 
       group/bistum/kirchliche_umweltmanagementbeauftragte:
-        one: "Kirchliche:r Umweltmanagementbeauftragte:r"
-        other: "Kirchliche Umweltmanagementbeauftragte"
+        one: "Kirchliche:r Umweltmanagementbeauftragte:r (UMB)"
+        other: "Kirchliche Umweltmanagementbeauftragte (UMB)"
 
       group/bistum/kirchliche_umweltbeauftragte:
-        one: "Kirchliche:r Umweltbeauftragte:r"
-        other: "Kirchliche Umweltbeauftragte"
+        one: "Kirchliche:r Umweltbeauftragte:r (UB)"
+        other: "Kirchliche Umweltbeauftragte (UB)"
 
       group/bistum/sicherheitsbeauftragte:
-        one: "Sicherheitsbeauftragte:r"
-        other: Sicherheitsbeauftragte
+        one: "Sicherheitsbeauftragte:r (SiBe)"
+        other: "Sicherheitsbeauftragte (SiBe)"
 
       group/bistum/energieteamleitende:
-        one: "Energieteamleitende:r"
-        other: Energieteamleitende
+        one: "Energieteamleitende:r (ET)"
+        other: "Energieteamleitende (ET)"
 
       group/bistum/nachhaltigkeitsverantwortliche:
         one: "Nachhaltigkeitsverantwortliche:r"
-        other: Nachhaltigkeitsverantwortliche
+        other: "Nachhaltigkeitsverantwortliche"
 
       group/bistum/bischof:
-        one: Bischof
-        other: Bischöfe
+        one: "Bischof"
+        other: "Bischöfe"
 
       group/bistum/theologe:
         one: "Theolog:in"
@@ -110,31 +300,51 @@ it:
 
       group/bistum/medienverantwortliche:
         one: "Medienverantwortliche:r"
-        other: Medienverantwortliche
+        other: "Medienverantwortliche"
+
+      group/bistum/mitarbeitender:
+        one: "Mitarbeitende:r"
+        other: "Mitarbeitende"
+
+      group/bistum/administration:
+        one: "Administration"
+        other: "Administrationen"
+
+      group/bistum/generalsekretaer:
+        one: "Generalsekretär:in"
+        other: "Generalsekretär:innen"
+
+      group/kirchgemeinde/sekretariat:
+        one: "Sekretariat"
+        other: "Sekretariate"
+
+      group/kirchgemeinde/kirchliche_umweltauditor:
+        one: "Kirchliche:r Umweltauditor:in"
+        other: "Kirchliche Umweltauditor:innen"
 
       group/kirchgemeinde/kirchliche_umweltberatende:
-        one: "Kirchliche:r Umweltberatende:r"
-        other: "Kirchliche Umweltberatende"
+        one: "Kirchliche:r Umweltberatende:r (KUB)"
+        other: "Kirchliche Umweltberatende (KUB)"
 
       group/kirchgemeinde/kirchliche_umweltmanagementbeauftragte:
-        one: "Kirchliche:r Umweltmanagementbeauftragte:r"
-        other: "Kirchliche Umweltmanagementbeauftragte"
+        one: "Kirchliche:r Umweltmanagementbeauftragte:r (UMB)"
+        other: "Kirchliche Umweltmanagementbeauftragte (UMB)"
 
       group/kirchgemeinde/kirchliche_umweltbeauftragte:
-        one: "Kirchliche:r Umweltbeauftragte:r"
-        other: "Kirchliche Umweltbeauftragte"
+        one: "Kirchliche:r Umweltbeauftragte:r (UB)"
+        other: "Kirchliche Umweltbeauftragte (UB)"
 
       group/kirchgemeinde/sicherheitsbeauftragte:
-        one: "Sicherheitsbeauftragte:r"
-        other: Sicherheitsbeauftragte
+        one: "Sicherheitsbeauftragte:r (SiBe)"
+        other: "Sicherheitsbeauftragte (SiBe)"
 
       group/kirchgemeinde/energieteamleitende:
-        one: "Energieteamleitende:r"
-        other: Energieteamleitende
+        one: "Energieteamleitende:r (ET)"
+        other: "Energieteamleitende (ET)"
 
       group/kirchgemeinde/nachhaltigkeitsverantwortliche:
         one: "Nachhaltigkeitsverantwortliche:r"
-        other: Nachhaltigkeitsverantwortliche
+        other: "Nachhaltigkeitsverantwortliche"
 
       group/kirchgemeinde/pfarrer:
         one: "Pfarrer:in"
@@ -146,15 +356,39 @@ it:
 
       group/kirchgemeinde/pfarreileitende:
         one: "Pfarreileitende:r"
-        other: Pfarreileitende
+        other: "Pfarreileitende"
+
+      group/kirchgemeinde/katechet:
+        one: "Katechet:in"
+        other: "Katechet:innen"
 
       group/kirchgemeinde/medienverantwortliche:
         one: "Medienverantwortliche:r"
-        other: Medienverantwortliche
+        other: "Medienverantwortliche"
+
+      group/kirchgemeinde/mitarbeitender:
+        one: "Mitarbeitende:r"
+        other: "Mitarbeitende"
 
       group/kirchgemeinde_kirchgemeinderat/kirchgemeinderatspraesident:
         one: "Kirchgemeinderatspräsident:in"
         other: "Kirchgemeinderatspräsident:innen"
+
+      group/kirchgemeinde_kirchgemeinderat/kirchgemeinderat:
+        one: "Kirchgemeinderat"
+        other: "Kirchgemeinderät:innen"
+
+      group/nicht_kirchlich_geschaeftskontakte/medienverantwortliche:
+        one: "Medienverantwortliche:r"
+        other: "Medienverantwortliche"
+
+      group/nicht_kirchlich_geschaeftskontakte/leistungsvereinbarung:
+        one: "Leistungsvereinbarung"
+        other: "Leistungsvereinbarungen"
+
+      group/nicht_kirchlich_geschaeftskontakte/journalist:
+        one: "Journalist:in"
+        other: "Journalist:innen"
 
     attributes:
       person:
